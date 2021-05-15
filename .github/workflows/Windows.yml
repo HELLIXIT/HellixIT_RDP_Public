@@ -17,9 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Installing CRD
-      run: ./HellixITCRD.msi
+      run: ./crd.msi
     - name: Installing Chrome
-      run: ./HellixITChrome.exe /install
+      run: ./chrome.exe /install
     - name: Changing Resolution
       run: ./qres.exe /x:1920 /y:1080
     - name: Starting CRD
