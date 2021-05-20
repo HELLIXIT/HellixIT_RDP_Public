@@ -17,12 +17,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Installing CRD
-      run: ./crd.msi
+      run: ./windows/crd.msi
     - name: Installing Chrome
-      run: ./chrome.exe /install
+      run: ./windows/chrome.exe /install
     - name: Changing Resolution
-      run: ./qres.exe /x:1920 /y:1080
+      run: ./windows/qres.exe /x:1920 /y:1080
     - name: Starting CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Keep Running
-      run: ./kr.ps1
+      run: ./windows/kr.ps1
