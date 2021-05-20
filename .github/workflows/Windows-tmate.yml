@@ -1,4 +1,4 @@
-name: Windows
+name: Windows (tmate)
 
 on: 
   workflow_dispatch:
